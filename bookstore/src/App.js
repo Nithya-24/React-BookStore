@@ -1,21 +1,17 @@
+import React from 'react';
 import './App.css';
-import Header from "../src/component/header/header";
-import Footer from "../src/component/footer/footer";
-import BookList from './component/books/books';
-import CartPage from './component/cartPage/cartPage';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
+
+import RouterComponent from './router/RouterComponent';
+import CbFooter from "./component/utils/CbFooter";
 
 function App() {
-  return (
-    <>
-    
-      <Header />
-      <BookList />
-      {/* <CartPage /> */}
-      <Footer />
+    return (
+        <BrowserRouter>
+            <RouterComponent/>
 
-    </>
-    
-  );
+        </BrowserRouter>
+    );
 }
 
 export default App;
